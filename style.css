@@ -36,6 +36,11 @@ img {
 main {
   height: 100vh;
   padding-block: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 #container {
@@ -58,4 +63,18 @@ main {
   height: calc(100% / var(--grid-size));
   background-color: #fff;
   outline: 1px solid #eee;
+  user-select: none;
+}
+
+.grid-btn {
+  background-color: #f0f0f0;
+  padding: 0.625rem 1.5rem;
+  border: 1px solid #909090;
+  border-radius: 0.5rem;
+
+  text-transform: uppercase;
+}
+
+.grid-btn:hover {
+  filter: brightness(85%);
 }
